@@ -1,0 +1,25 @@
+<div class="wrapper">
+
+    <main>
+        <div class="bad-words-container">
+            <div class="bad-words-header">
+                <span>Bad words:</span> 
+                <p class="words" name="badWords">{{ badWords }}</p>
+            </div>
+            <div class="bad-words-editing">
+                <input type="text" placeholder="{{ placeholder }}" [style.borderColor]="isInput! ? 'grey' :
+                'red'" class="input-new-word" [(ngModel)]="newWord" name="fieldName">
+                <button type="button" class="btn-add" (click)="addWord()">Add</button>
+                <button type="button" class="btn-reset" (click)="resetAll()">Reset</button>
+            </div>
+            <div class="bad-words-writearea">
+                <textarea class="textarea" placeholder="{{ placeholderTextAr  }}" [style.borderColor]="isText! ? 'grey' :
+                'red'" [(ngModel)]="textArea"> {{ textArea }}</textarea>
+            </div>
+            <div class="bad-words-btn">
+                <button type="button" class="btn-cenzor" (click)="cenzorBtn()">Cenzor</button>
+            </div>
+        </div>
+    </main>
+   
+  </div>
