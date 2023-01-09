@@ -1,3 +1,9 @@
+! ЗАВДАННЯ 
+
+Необхідно розробити марштутизацію між компонентами home та works. 
+Причому в компоненті works має знаходитися ще 3 дочірні компоненти: cenzor, userList, i taskList(в яких має бути реалізація попередніх домашніх завдань) між якими також має працювати марштрутизація.
+
+
 # AngularRoutes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
